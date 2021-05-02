@@ -1,31 +1,34 @@
-## Noteful JSON Server
+# Noteful API
 
-This is a project for education purposes created by Thinkful.
+**Demo via client:** https://noteful-client.oscarsanchez13.vercel.app/
 
-This is a json-server managed API meant for developing `noteful-client` projects.
+<br />
 
-Once started, this will run a local API server on `http://localhost:9090`.
+<hr />
 
-If you navigate to the base URL there will be a HTML documentation page displayed.
+# Iterations
 
-There are two top level endpoints:
+## Deploy Server and Database to Production (Heroku)
 
-- /folders
-- /notes
+Assignment per [**Node & Postgres Checkpoint 20**](https://courses.thinkful.com/node-postgres-v1/checkpoint/20#assignment) with guidance from [**Checkpoint 7: Deploy a Server**](https://courses.thinkful.com/node-postgres-v1/checkpoint/7)
 
-Both support GET, POST, PUT, PATCH and DELETE requests. For PUT, PATCH and DELETE requests you must supply the respective id in the endpoint's path.
+Completed assignment, but due to production migration issue have to migrate/seed heroku postgresql database tables via psql/dBeaver, not via `npm run deploy`.
 
-For example:
+<br />
 
-- GET /notes
-- GET /folders
-- POST /notes
-- POST /folders
-- PATCH /notes/{note-id}/
-- PATCH /folders/{folder-id}/
-- DELETE /notes/{note-id}/
-- DELETE /folders/{folder-id}/
+## Add relationships to Noteful
 
-To start the server, run `npm start`.
+Per assignment: https://courses.thinkful.com/node-postgres-v1/checkpoint/19#assignment
 
-The database is initiated from the `db.js` file whenever the server is started. No data is persisted after the server has been shut down.
+**associated client**: https://github.com/oscarsanchez13/noteful-client 
+
+<br />
+
+## Guidance
+Checkpoint 19: Add Relationships to Blogful...
+* [Walk-thru](https://courses.thinkful.com/node-postgres-v1/checkpoint/19)
+* [myRepo: blogful-api](https://github.com/oscarsanchez13/blogful-api)
+
+<hr />
+
+initialized via my [Express-Boilerplate](https://github.com/oscarsanchez13/express-boilerplate)
